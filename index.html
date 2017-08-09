@@ -75,14 +75,14 @@
 						<span>{{ role }}</span>
 					</div>
 				</div>
-				<div class="modal-wrapper" id="md{{ index }}" style="display: none;" onClick="hideModal(this)">
-					<div class="portfolio-modal">
-						<div class="portfolio-modal-image" style="background-image: url('{{ imageURI }}')"></div>
-						<h3>{{ title }}</h3>
-						<sub>{{ projectYear }} | {{ role }} | <em style="background-color: {{ statusColor }}">{{ status }}</em></sub>
-						<p>{{ description }}</p>
-						<a href="{{ link }}" class="cta">Visit</a>
-					</div>
+			</div>
+			<div class="modal-wrapper" id="md{{ index }}" style="display: none;" onClick="hideModal(this)">
+				<div class="portfolio-modal">
+					<div class="portfolio-modal-image" style="background-image: url('{{ imageURI }}')"></div>
+					<h3>{{ title }}</h3>
+					<sub>{{ projectYear }} | {{ role }} | <em style="background-color: {{ statusColor }}">{{ status }}</em></sub>
+					<p>{{ description }}</p>
+					<a href="{{ link }}" class="cta">Visit</a>
 				</div>
 			</div>
 		</script>
