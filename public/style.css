@@ -268,9 +268,12 @@ form {
 	padding-left: 0;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
+.form-group input:focus {
   border-bottom-color: #F7567C;
+}
+
+.form-group textarea:focus {
+	border-color: #F7567C;
 }
 
 .form-group label.focus {
