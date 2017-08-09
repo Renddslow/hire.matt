@@ -21,7 +21,6 @@ $(() => {
 			$(".portfolio-container").append($(html));
 		}
 		$("#loading").hide();
-		$(".portfolio-box").click(clickHandler);
 
 		$(".modal-wrapper").click((e) => {
 			$(".modal-wrapper").hide();
@@ -34,11 +33,7 @@ const replaceAll = (string, sub, replace) => {
 	return string.split(sub).join(replace);
 };
 
-const clickHandler = () => {
-	var $this = $(this),
-			id = $this.attr("bound-to");
-	console.log($this);
-	console.log(id);
-	console.log("stuff");
+const clickHandler = (target) => {
+	var id = $(target).attr("bound-to");
 	$(`#${id}`).show();
 }
