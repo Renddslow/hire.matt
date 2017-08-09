@@ -1,13 +1,4 @@
 $(() => {
-	$(".portfolio-box").click((e) => {
-		console.log("Batman")
-		$(e.target).find(".modal-wrapper").show();
-	});
-
-	$(".modal-wrapper").click((e) => {
-		console.log("Stuff")
-		$(e.target).hide();
-	});
 
 	$.getJSON("/public/work.json", (json) => {
 		for (var i = 0; i < json.work.length; i++) {
@@ -29,6 +20,15 @@ $(() => {
 			$(".portfolio-container").append($(html));
 		}
 		$("#loading").hide();
+		$(".portfolio-box").click((e) => {
+			console.log("Batman")
+			$(e.target).find(".modal-wrapper").show();
+		});
+
+		$(".modal-wrapper").click((e) => {
+			console.log("Stuff")
+			$(e.target).hide();
+		});
 	});
 });
 
