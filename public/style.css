@@ -303,6 +303,36 @@ button.cta {
   text-decoration: underline;
 }
 
+footer {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  padding: 1em;
+  border-top: 1px solid #eee;
+}
+
+footer p {
+  display: block;
+  text-align: center;
+  font-weight: 100;
+}
+
+footer ul {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+  font-size: 1.3em;
+  margin: .5em 1em;
+}
+
+footer ul li a {
+  color: #333;
+}
+
 @media screen and (min-width: 640px) {
 	.portfolio-container {
     display: flex;
