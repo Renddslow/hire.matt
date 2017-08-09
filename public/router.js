@@ -1,5 +1,5 @@
 $(() => {
-	window.onhashchange = () {
+	window.onhashchange = () => {
 		handleDirectNavigation(window.location.href);
 	};
 	handleDirectNavigation(window.location.href);
