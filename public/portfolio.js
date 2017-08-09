@@ -1,9 +1,11 @@
 $(() => {
 	$(".portfolio-box").click((e) => {
+		console.log("Batman")
 		$(e.target).find(".modal-wrapper").show();
 	});
 
 	$(".modal-wrapper").click((e) => {
+		console.log("Stuff")
 		$(e.target).hide();
 	});
 
@@ -26,6 +28,7 @@ $(() => {
 			}
 			$(".portfolio-container").append($(html));
 		}
+		$("#loading").hide();
 	});
 });
 
