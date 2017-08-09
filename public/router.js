@@ -1,4 +1,7 @@
 $(() => {
+	window.onhashchange = () {
+		handleDirectNavigation(window.location.href);
+	};
 	handleDirectNavigation(window.location.href);
 
   $("a.internal").click((e) => {
