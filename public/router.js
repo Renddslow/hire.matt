@@ -1,5 +1,13 @@
 $(() => {
 	hideRoutesExcluding("home", routes);
+
+	var currentLocation = window.location.href.replace("://", "").split("/");
+	if (currentLocation[currentLocation.length - 1]) {
+		doRouteAction(currentLocation[currentLocation.length - 1]);
+	} else {
+		doRouteAction("home");
+	}
+
   $("a.internal").click((e) => {
     e.preventDefault();
     let route = $(e.target).attr("href").replace("/", "");
@@ -28,9 +36,11 @@ const doRouteAction = (route) => {
 		case "work":
 			$(".work").show();
 			hideRoutesExcluding("work", routes);
+			break;
 		case "contact":
 			$(".contact").show();
 			hideRoutesExcluding("contact", routes);
+			break;
 	}
 }
 
