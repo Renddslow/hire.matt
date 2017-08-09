@@ -1,5 +1,5 @@
 $(() => {
-	window.onhashchange = () => {
+	window.onpopstate = () => {
 		handleDirectNavigation(window.location.href);
 	};
 	handleDirectNavigation(window.location.href);
