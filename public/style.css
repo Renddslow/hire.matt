@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600');
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+#wrapper {
+  display: block;
+  width: 320px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  background: #fff;
+}
+
+#logo {
+  color: #111;
+  font-size: 1.5em;
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin: 1em 0;
+  font-family: "Courier", serif;
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  display: block;
+  width: 100%;
+}
+
+nav ul {
+  margin: 1em 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 1em;
+  text-align: center;
+  font-family: "Courier", serif;
+}
+
+nav ul li a {
+  color: #555;
+  padding: 4px 6px;
+}
+
+nav ul li a:hover {
+  color: #fff;
+  background: #222;
+}
+
+section {
+  padding: 3em .5em;
+  box-sizing: border-box;
+}
+
+section h1::after {
+  content: "";
+  width: 50%;
+  display: block;
+  height: 4px;
+  position: relative;
+  background: #FFDCBA;
+  margin: 1em 0;
+}
+
+section p {
+  padding: 0 0 1em;
+  font-weight: 100;
+  color: 333;
+  line-height: 2;
+}
+
+.cta {
+  background: #BBDBE4;
+  display: block;
+  width: 95%;
+  padding: 1em 0;
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+}
+
+#loading {
+  color: #ccc;
+}
