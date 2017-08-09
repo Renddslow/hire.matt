@@ -51,5 +51,7 @@ const displaySuccess = () => {
 
 const displayError = () => {
 	$("form").remove();
-	$(".contact").append($("<p><strong>Whoops!</strong></p><p>Looks like there was an issue submitting the form. Well I don't usually do this for just anyone, but since I like you, how `bout you just <a href=\"mailto:mubatt@wyopub.com\">send me an email.</a>"));
+	let emailAcc = "mubatt";
+	let emailDomain = "wyopub.com";
+	$(".contact").append($(`<p><strong>Whoops!</strong></p><p>Looks like there was an issue submitting the form. Well I don't usually do this for just anyone, but since I like you, how 'bout you just <a href="mailto:${emailAcc}@${emailDomain}">send me an email.</a>`));
 }

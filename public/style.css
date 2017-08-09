@@ -295,6 +295,11 @@ button.cta {
 	cursor: pointer;
 }
 
+.contact p a {
+  color: #F7567C;
+  text-decoration: underline;
+}
+
 @media screen and (min-width: 640px) {
 	.portfolio-container {
     display: flex;
