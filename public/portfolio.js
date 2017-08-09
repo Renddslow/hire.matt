@@ -21,7 +21,8 @@ $(() => {
 		}
 		$("#loading").hide();
 		$(".portfolio-box-info").click((e) => {
-			$(e.target).parent().find(".modal-wrapper").show();
+			console.log(e.target);
+			$(e.target).parent().find(".modal-wrapper").show()
 		});
 
 		$(".modal-wrapper").click((e) => {
