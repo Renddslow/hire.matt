@@ -20,7 +20,7 @@ $(() => {
 			$(".portfolio-container").append($(html));
 		}
 		$("#loading").hide();
-		$(".portfolio-box").click((e) => {
+		$(".portfolio-box-info").click((e) => {
 			console.log("Batman")
 			$(e.target).find(".modal-wrapper").show();
 		});
