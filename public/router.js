@@ -1,12 +1,6 @@
 $(() => {
-	hideRoutesExcluding("home", routes);
-
-	var currentLocation = window.location.href.replace("://", "").split("/");
-	if (currentLocation[currentLocation.length - 1]) {
-		doRouteAction(currentLocation[currentLocation.length - 1]);
-	} else {
-		doRouteAction("home");
-	}
+	// hideRoutesExcluding("home", routes);
+	handleDirectNavigation(window.location.href);
 
   $("a.internal").click((e) => {
     e.preventDefault();
@@ -42,7 +36,7 @@ const doRouteAction = (route) => {
 			hideRoutesExcluding("contact", routes);
 			break;
 	}
-}
+};
 
 const hideRoutesExcluding = (route, availableRoutes) => {
 	for (var i = 0; i < availableRoutes.length; i++) {
@@ -51,4 +45,13 @@ const hideRoutesExcluding = (route, availableRoutes) => {
 		}
 		$(`.${availableRoutes[i]}`).hide();
 	}
-}
+};
+
+const handleDirectNavigation = (location) => {
+	var currentLocation = location.replace("://", "").split("/");
+	if (currentLocation[currentLocation.length - 1]) {
+		doRouteAction(currentLocation[currentLocation.length - 1]);
+	} else {
+		doRouteAction("home");
+	}
+};
