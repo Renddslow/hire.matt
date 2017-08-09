@@ -1,9 +1,21 @@
 {
 	"work": [
 		{
+			"image": "https://i.imgur.com/1T4bnnL.png",
+			"href": "https://why.flatland.church/",
+			"role": "Dev/Design/Content/Strategy",
+			"status": {
+				"label": "beta",
+				"color": "#F89406"
+			},
+			"title": "Why?",
+			"description": "Built under the premise that information/content that is only for church members should live outside the main church website. In this case we wanted to highlight an upcoming community-focused giving campaign.",
+			"year": "2017"
+		},
+		{
 			"image": "https://i.imgur.com/vuW5gWm.png",
 			"href": "http://dev.flatlandchurch.com/",
-			"role": "Development/Design/Content/Strategy",
+			"role": "Dev/Design/Content/Strategy",
 			"status": {
 				"label": "beta",
 				"color": "#F89406"
@@ -27,7 +39,7 @@
 		{
 			"image": "https://i.imgur.com/wrqYAE4.png",
 			"href": "https://simplyme.io/",
-			"role": "Development/Design/Content/Strategy",
+			"role": "Dev/Design/Content/Strategy",
 			"status": {
 				"label": "live",
 				"color": "#00B16A"
@@ -39,7 +51,7 @@
 		{
 			"image": "https://i.imgur.com/0v5AsYG.png",
 			"href": "https://flatlandchurch.com/",
-			"role": "Development/Design/Content/Strategy",
+			"role": "Dev/Design/Content/Strategy",
 			"status": {
 				"label": "live",
 				"color": "#00B16A"
