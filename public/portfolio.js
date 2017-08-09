@@ -10,7 +10,8 @@ $(() => {
 				statusColor: json.work[i].status.color,
 				title: json.work[i].title,
 				description: json.work[i].description,
-				projectYear: json.work[i].year
+				projectYear: json.work[i].year,
+				index: i
 			};
 
 			let html = $("#portfolio").html().trim();
@@ -20,14 +21,10 @@ $(() => {
 			$(".portfolio-container").append($(html));
 		}
 		$("#loading").hide();
-		$(".portfolio-box-info").click((e) => {
-			console.log(e.target);
-			$(e.target).parent().find(".modal-wrapper").show()
-		});
+		$(".portfolio-box").click(clickHandler);
 
 		$(".modal-wrapper").click((e) => {
-			console.log("Stuff");
-			$(e.target).hide();
+			$(".modal-wrapper").hide();
 		});
 	});
 });
@@ -36,3 +33,9 @@ $(() => {
 const replaceAll = (string, sub, replace) => {
 	return string.split(sub).join(replace);
 };
+
+const clickHandler = () => {
+	var $this = $(this),
+			id = $this.attr("bound-to");
+	$(`#{id}`).show();
+}

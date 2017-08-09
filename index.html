@@ -56,7 +56,7 @@
 				<a href="/work" class="cta internal">Explore My Work</a>
 			</section>
 			<section class="work">
-				<h1>Here Are a Few Examples of Projects I've Worked On</h1>
+				<h1>Here Are a Few Projects I've Worked On</h1>
 				<div class="portfolio-container">
 					<h2 id="loading">Loading...</h2>
 				</div>
@@ -68,14 +68,14 @@
 		</div>
 
 		<script type="text/template" id="portfolio">
-			<div class="portfolio-box" style="background-image: url('{{ imageURI }}')">
+			<div class="portfolio-box" style="background-image: url('{{ imageURI }}')" bound-to="md{{ index }}">
 				<div class="portfolio-box-info">
 					<div class="meta">
 						<h4>{{ title }}</h4>
 						<span>{{ role }}</span>
 					</div>
 				</div>
-				<div class="modal-wrapper" style="display: none;">
+				<div class="modal-wrapper" id="md{{ index }}" style="display: none;">
 					<div class="portfolio-modal">
 						<div class="portfolio-modal-image" style="background-image: url('{{ imageURI }}')"></div>
 						<h3>{{ title }}</h3>
