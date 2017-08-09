@@ -37,5 +37,5 @@ const replaceAll = (string, sub, replace) => {
 const clickHandler = () => {
 	var $this = $(this),
 			id = $this.attr("bound-to");
-	$(`#{id}`).show();
+	$(`#${id}`).show();
 }
