@@ -239,7 +239,7 @@ form {
   display: block;
   font-weight: 300;
   color: #333;
-  position: relative;
+  position: absolute;
   top: .5em;
 	padding-left: 6px;
   transition: top .1s ease-out;
