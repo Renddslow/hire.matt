@@ -4,14 +4,14 @@
 		<link rel="stylesheet" href="/public/style.css">
 		<meta charset="utf-8">
 		<title>Hire Matt McElwee - Digital Branding & Communications Consultant</title>
-		<meta name="description" content="I consult with organizations, churches, and small businesses in all areas of digital communication and branding.">
+		<meta name="description" content="I consult with organizations, churches, and small businesses in all areas of digital communication and branding. Together we'll make something amazing.">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="robots" content="index, follow">
 		<meta name="author" content="Matt McElwee">
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="@renddslow">
 		<meta name="twitter:title" content="Hire Matt McElwee - Digital Branding & Communications Consultant">
-		<meta name="twitter:description" content="I consult with organizations, churches, and small businesses in all areas of digital communication and branding.">
+		<meta name="twitter:description" content="I consult with organizations, churches, and small businesses in all areas of digital communication and branding. Together we'll make something amazing.">
 		<meta property="og:type" content="profile">
 		<meta property="og:title" content="Hire Matt McElwee - Digital Branding & Communications Consultant">
 		<meta property="og:url" content="https://hire.mattmcelwee.com">
@@ -63,7 +63,22 @@
 				<a href="/contact" class="cta internal">Let's Get Started</a>
 			</section>
 			<section class="contact">
-				<h1>Contact is working</h1>
+				<h1>Let's Make Something Amazing Together</h1>
+				<form method="post" action="/contact">
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input type="text" name="full-name" id="name">
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="text" name="email" id="email">
+					</div>
+					<div class="form-group">
+						<label for="description">Tell Me About Your Project</label>
+						<textarea id="description"></textarea>
+					</div>
+					<button class="cta" type="submit">Make It Happen</button>
+				</form>
 			</section>
 		</div>
 
@@ -82,7 +97,7 @@
 					<h3>{{ title }}</h3>
 					<sub>{{ projectYear }} | {{ role }} | <em style="background-color: {{ statusColor }}">{{ status }}</em></sub>
 					<p>{{ description }}</p>
-					<a href="{{ link }}" class="cta">Visit</a>
+					<a href="{{ link }}" class="cta" target="_blank">Visit</a>
 				</div>
 			</div>
 		</script>

@@ -82,7 +82,7 @@ section p {
 }
 
 .cta {
-  background: #BBDBE4;
+  background: #F7567C;
   display: block;
   width: 95%;
   padding: 1em 0;
@@ -245,5 +245,12 @@ section p {
 
 	.portfolio-modal {
 		width: 50%;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.portfolio-modal {
+		width: 40%;
+		margin-top: 2em;
 	}
 }
