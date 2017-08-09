@@ -3,14 +3,62 @@
 		{
 			"image": "https://i.imgur.com/vuW5gWm.png",
 			"href": "http://dev.flatlandchurch.com/",
-			"role": "Lead Developer/Designer",
+			"role": "Development/Design/Content/Strategy",
 			"status": {
 				"label": "beta",
-				"color": "#f00"
+				"color": "#F89406"
 			},
 			"title": "Flatland Church (late 2017)",
 			"description": "Following an initial redesign in January 2017, we started working on major performance improvements that lead to what we consider a soft-redesign. The new design will launch in late-August 2017.",
 			"year": "2017"
+		},
+		{
+			"image": "https://i.imgur.com/v0e31zz.png",
+			"href": "http://dev.thewellnesspointe.com/",
+			"role": "Development/Design",
+			"status": {
+				"label": "beta",
+				"color": "#F89406"
+			},
+			"title": "The Wellness Pointe",
+			"description": "The biggest challenge with the Wellness Pointe was cutting down on the amount of information from the original website to drive new customer aquisition with clear calls to action and lead magnets while also maintaining a welcoming vibe.",
+			"year": "2017"
+		},
+		{
+			"image": "https://i.imgur.com/wrqYAE4.png",
+			"href": "https://simplyme.io/",
+			"role": "Development/Design/Content/Strategy",
+			"status": {
+				"label": "live",
+				"color": "#00B16A"
+			},
+			"title": "SimplyMe.io",
+			"description": "The stated purpose of the main landing page for simplyme.io is to convert new visitors to customers. The design is streamlined with a healthy balance of content and calls to action. The initial page load is specifically designed to pass the \"grunt-test.\"",
+			"year": "2016"
+		},
+		{
+			"image": "https://i.imgur.com/0v5AsYG.png",
+			"href": "https://flatlandchurch.com/",
+			"role": "Development/Design/Content/Strategy",
+			"status": {
+				"label": "live",
+				"color": "#00B16A"
+			},
+			"title": "Flatland Church",
+			"description": "A massive overhaul from the original site, this new platform and design is designed to focus down the information we provide with a primary goal of converting first-time site visitors to first-time church attendees.",
+			"year": "2016"
+		},
+		{
+			"image": "https://i.imgur.com/Z2zcILT.png",
+			"href": "http://www.gtaog.org/",
+			"role": "Development",
+			"status": {
+				"label": "changed",
+				"color": "#4183D7"
+			},
+			"title": "GT Church",
+			"description": "While some elements of the design have changed since my involvement with the project, I lead the initial redesign of the site with a focus on clear information architecture and image-driven design.",
+			"year": "2015"
 		}
 	]
 }
