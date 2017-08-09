@@ -1,5 +1,4 @@
 $(() => {
-	// hideRoutesExcluding("home", routes);
 	handleDirectNavigation(window.location.href);
 
   $("a.internal").click((e) => {
