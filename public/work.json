@@ -1,5 +1,16 @@
 {
 	"work": [
-		
+		{
+			"image": "http://i.imgur.com/vuW5gWm.png",
+			"href": "http://dev.flatlandchurch.com/",
+			"role": "Lead Developer/Designer",
+			"status": {
+				"label": "beta",
+				"color": "#f00"
+			},
+			"title": "Flatland Church (late 2017)",
+			"description": "Following an initial redesign in January 2017, we started working on major performance improvements that lead to what we consider a soft-redesign. The new design will launch in late-August 2017.",
+			"year": "2017"
+		}
 	]
 }

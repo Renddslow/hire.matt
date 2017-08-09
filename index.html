@@ -2,6 +2,23 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="/public/style.css">
+		<meta charset="utf-8">
+		<title>Hire Matt McElwee - Digital Branding & Communications Consultant</title>
+		<meta name="description" content="I consult with organizations, churches, and small businesses in all areas of digital communication and branding.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="robots" content="index, follow">
+		<meta name="author" content="Matt McElwee">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@renddslow">
+		<meta name="twitter:title" content="Hire Matt McElwee - Digital Branding & Communications Consultant">
+		<meta name="twitter:description" content="I consult with organizations, churches, and small businesses in all areas of digital communication and branding.">
+		<meta property="og:type" content="profile">
+		<meta property="og:title" content="Hire Matt McElwee - Digital Branding & Communications Consultant">
+		<meta property="og:url" content="https://hire.mattmcelwee.com">
+		<meta property="og:image" content="">
+		<meta property="profile:first_name" content="Matt">
+		<meta property="profile:last_name" content="McElwee">
+		<link rel="canonical" href="https://hire.mattmcelwee.com/">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="/public/router.js"></script>
 		<script src="/public/portfolio.js"></script>
@@ -51,8 +68,20 @@
 		</div>
 
 		<script type="text/template" id="portfolio">
-			<div class="portfolio-box">
-
+			<div class="portfolio-box" style="background-image: url('{{ imageURI }}')">
+				<div class="portfolio-box-info">
+					<div class="meta">
+						<h4>{{ title }}</h4>
+						<span>{{ role }}</span>
+					</div>
+				</div>
+				<div class="portfolio-modal">
+					<div class="portfolio-modal-image" style="background-image: url('{{ imageURI }}')"></div>
+					<h3>{{ title }}</h3>
+					<sub>{{ projectYear }} | {{ role }} | <em style="background-color: {{ statusColor }}">{{ status }}</em></sub>
+					<p>{{ description }}</p>
+					<a href="{{ link }}" class="cta">Visit</a>
+				</div>
 			</div>
 		</script>
 	</body>
