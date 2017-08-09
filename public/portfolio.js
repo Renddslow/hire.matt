@@ -21,10 +21,6 @@ $(() => {
 			$(".portfolio-container").append($(html));
 		}
 		$("#loading").hide();
-
-		$(".modal-wrapper").click((e) => {
-			$(".modal-wrapper").hide();
-		});
 	});
 });
 
@@ -36,4 +32,8 @@ const replaceAll = (string, sub, replace) => {
 const clickHandler = (target) => {
 	var id = $(target).attr("bound-to");
 	$(`#${id}`).show();
+}
+
+const hideModal = (target) => {
+	$(target).hide();
 }
