@@ -13,6 +13,7 @@
   font-family: 'Montserrat', sans-serif;
   background: #fff;
 	position: relative;
+	overflow: hidden;
 }
 
 #logo {
@@ -145,4 +146,70 @@ section p {
 
 .portfolio-box:hover > .portfolio-box-info {
   opacity: .95;
+}
+
+.modal-wrapper {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 4;
+  height: 100vh;
+}
+
+.portfolio-modal {
+  display: block;
+  width: 95%;
+  margin:  3em auto;
+  background: #fff;
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),
+							0 2px 2px 0 rgba(0,0,0,.14),
+							0 1px 5px 0 rgba(0,0,0,.12);
+  overflow: hidden;
+  cursor: default;
+}
+
+.portfolio-modal-image {
+  display: block;
+  height: 0;
+  width: 100%;
+  padding-bottom: 60%;
+  background-position: center;
+  background-size: cover;
+  border-bottom: 1px solid #ccc;
+}
+
+.portfolio-modal h3 {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin: 2em 0 0;
+}
+
+.portfolio-modal sub {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-weight: 300;
+  margin: .5em 0;
+}
+
+.portfolio-modal sub em {
+  padding: 2px 8px;
+  border-radius: 5px;
+  color: #fff;
+  font-style: normal;
+}
+
+.portfolio-modal p {
+  display: block;
+  width: 90%;
+  margin: 1em auto 0;
+  font-size: .95em;
+}
+
+.portfolio-modal .cta {
+  margin: .5em auto 1em;
 }

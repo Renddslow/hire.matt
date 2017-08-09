@@ -1,4 +1,12 @@
 $(() => {
+	$(".portfolio-box").click((e) => {
+		$(e.target).find(".modal-wrapper").show();
+	});
+
+	$(".modal-wrapper").click((e) => {
+		$(e.target).hide();
+	});
+
 	$.getJSON("/public/work.json", (json) => {
 		for (var i = 0; i < json.work.length; i++) {
 			let args = {
