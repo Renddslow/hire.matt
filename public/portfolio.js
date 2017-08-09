@@ -21,12 +21,11 @@ $(() => {
 		}
 		$("#loading").hide();
 		$(".portfolio-box-info").click((e) => {
-			console.log("Batman")
-			$(e.target).find(".modal-wrapper").show();
+			$(e.target).parent().find(".modal-wrapper").show();
 		});
 
 		$(".modal-wrapper").click((e) => {
-			console.log("Stuff")
+			console.log("Stuff");
 			$(e.target).hide();
 		});
 	});
