@@ -241,6 +241,9 @@ form {
   color: #333;
   position: relative;
   top: 1.6em;
+  transition: top .1s ease-out;
+	-webkit-transition: top .1s ease-out;
+	-moz-transition: top .1s ease-out;
 }
 
 .form-group input {
@@ -259,16 +262,16 @@ form {
 
 .form-group label.active {
   top: 0;
-  font-size: .9em;
+  font-size: .7em;
   color: #333;
 }
 
 .form-group input:focus {
-  border-bottom-color: #FFDCBA;
+  border-bottom-color: #F7567C;
 }
 
 .form-group label.focus {
-  color: #FFDCBA;
+  color: #F7567C;
 }
 
 .form-group textarea {
