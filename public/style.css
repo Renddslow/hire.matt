@@ -258,7 +258,7 @@ form {
   outline: none;
   -webkit-appearance: none;
   appearance: none;
-  border-radius: none;
+  border-radius: 0;
 }
 
 .form-group label.active {
@@ -290,6 +290,9 @@ form {
   font-size: 1em;
   box-sizing: border-box;
   padding: .5em;
+  border-radius: 0;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 button.cta {
