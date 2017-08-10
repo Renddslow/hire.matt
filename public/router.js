@@ -20,7 +20,8 @@ $(() => {
 const routes = [
 	"home",
 	"work",
-	"contact"
+	"contact",
+	"services"
 ];
 
 const doRouteAction = (route) => {
@@ -36,6 +37,10 @@ const doRouteAction = (route) => {
 		case "contact":
 			$(".contact").show();
 			hideRoutesExcluding("contact", routes);
+			break;
+		case "services":
+			$(".services").show();
+			hideRoutesExcluding("services", routes);
 			break;
 	}
 };
