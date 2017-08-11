@@ -81,6 +81,15 @@ section p {
   line-height: 2;
 }
 
+section ul {
+  margin-left: 2em;
+}
+
+section ul li {
+  margin: 2em 0;
+  font-weight: 100;
+}
+
 .cta {
   background: #F7567C;
   display: block;
